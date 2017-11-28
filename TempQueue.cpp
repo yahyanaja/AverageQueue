@@ -38,7 +38,7 @@ void TempQueue::display(char * out)
     
    for (int i = 0; i < size ; i++)
      sprintf(out + strlen(out), "%d: %f ", i, myArray[i]);
-    sprintf(out + strlen(out), "%f\n", average());
+    sprintf(out + strlen(out), "%f\n\r", average());
 }
 
 //--- Definition of front()
