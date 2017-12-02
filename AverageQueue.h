@@ -1,4 +1,4 @@
-/* TempQueue.h contains the declaration of class TempQueue.
+/* AverageQueue.h contains the declaration of class AverageQueue.
    Basic operations:
      Constructor: Constructs an empty queue
      empty:       Checks if a queue is empty
@@ -15,19 +15,19 @@
 
 #include <iostream>
 
-#ifndef TEMPQUEUE
-#define TEMPQUEUE
+#ifndef AVERAGEQUEUE
+#define AVERAGEQUEUE
 
 //#include "AdditionProblem.h"
 const int QUEUE_CAPACITY = 10;
 typedef float QueueElement;
 
-class TempQueue
+class AverageQueue
 {
  public:
   /***** Function Members *****/
   /***** Constructor *****/
-  TempQueue();
+  AverageQueue();
   /*-----------------------------------------------------------------------
     Construct a Queue object.
 
