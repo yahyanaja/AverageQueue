@@ -1,14 +1,14 @@
-/*-- TempQueue.cpp---------------------------------------------------------
+/*-- AverageQueue.cpp---------------------------------------------------------
              This file implements Queue member functions.
 -------------------------------------------------------------------------*/
 
 #include <iostream>
 using namespace std;
 
-#include "TempQueue.h"
+#include "AverageQueue.h"
 
-//--- Definition of TempQueue constructor
-TempQueue::TempQueue()
+//--- Definition of AverageQueue constructor
+AverageQueue::AverageQueue()
 {
     count = 0;
     full = false;
@@ -16,7 +16,7 @@ TempQueue::TempQueue()
 
 int count = 0;
 //--- Definition of enqueue()
-void TempQueue::enqueue(const QueueElement & value)
+void AverageQueue::enqueue(const QueueElement & value)
 {
     if(count > 9)
     {
@@ -28,7 +28,7 @@ void TempQueue::enqueue(const QueueElement & value)
 }
 
 //--- Definition of display()
-void TempQueue::display(char * out) 
+void AverageQueue::display(char * out) 
 {
     int size;
     if(full)
@@ -42,7 +42,7 @@ void TempQueue::display(char * out)
 }
 
 //--- Definition of front()
-float TempQueue::average() const
+float AverageQueue::average() const
 {
     int size;
     float avg = 0;
